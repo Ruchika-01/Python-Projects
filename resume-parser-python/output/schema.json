@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ParsedResume",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "string",
+      "description": "Basic candidate information such as name and contact details"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of extracted technical and professional skills"
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of experience-related lines extracted from the resume"
+    },
+    "education": {
+      "type": "string",
+      "description": "Education section text"
+    }
+  },
+  "required": ["skills", "experience"]
+}
