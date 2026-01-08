@@ -1,0 +1,57 @@
+# Resume Parser (Core Python)
+
+A modular, rule-based resume parsing system built using core Python.  
+The project focuses on clean architecture, explainable logic, and real-world
+document processing rather than black-box machine learning models.
+
+This project demonstrates strong Python fundamentals, software design principles,
+and the ability to build maintainable and extensible systems.
+
+---
+
+## Features
+
+- Supports PDF and DOCX resume files
+- Rule-based section detection (Skills, Experience, Education)
+- Configurable and controlled skill extraction
+- Modular architecture with clear separation of concerns
+- Custom exception handling for robust error management
+- Unit tests using `pytest`
+- Output structure documented using a JSON schema
+
+---
+
+## Project Structure
+
+```text
+resume-parser-python/
+├── core/          # Pipeline orchestration and custom exceptions
+├── loaders/       # PDF and DOCX text extraction logic
+├── parsers/       # Section, skills, and experience parsing
+├── output/        # Output schema definition
+├── tests/         # Unit tests
+├── main.py        # Application entry point
+├── requirements.txt
+└── README.md
+
+How to Run
+
+1.Install dependencies:
+
+pip install -r requirements.txt
+
+
+2.Place a PDF or DOCX resume file in the project directory.
+
+3.Run the parser:
+
+python main.py
+
+
+The parsed output will be printed in structured JSON format.
+
+## Notes
+
+-Resume files are not included in the repository for privacy reasons.
+-The project is intentionally framework-agnostic and focuses on core Python.
+-Designed to be easily extended for additional resume sections or formats.
