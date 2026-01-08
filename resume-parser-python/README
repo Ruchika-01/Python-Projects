@@ -23,7 +23,7 @@ and the ability to build maintainable and extensible systems.
 
 ## Project Structure
 
-```text
+
 resume-parser-python/
 ├── core/          # Pipeline orchestration and custom exceptions
 ├── loaders/       # PDF and DOCX text extraction logic
